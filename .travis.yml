@@ -4,5 +4,5 @@ rvm:
 before_script:
   - psql -c 'create database notsoglam_test;' -U postgres
 script:
-  - bundle exec bin/rake db:create
-  - bundle exec bin/rake db:migrate
+  - rake db:create
+  - rake db:migrate
